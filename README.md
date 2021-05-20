@@ -13,11 +13,35 @@ This project is a Blog site meant for users to talk about tech related news. It 
 
 ## Usage 
 
-Clone the repo, navigate to the root folder, run the following commands from the CLI:     
+After cloning the repository you will need to create a new file named:
 
+`.env`
 
-Start Server;     
-`npm start`     
+In this file you will need to enter the following lines:
+
+```js script
+DB_NAME='name of your new database'
+DB_USER='your username for mysql'
+DB_PW='your password for mysql'
+```
+
+After that you will need to run the following:
+  
+`npm i`
+
+Next you need to login to mysql to create the database:
+
+`mysql -u root -p`
+
+Enter your mysql password
+
+`source db/schema.sql`
+
+`quit`   
+
+After that you are ready to start the server with:
+
+`npm start`
 
 
 ## License
@@ -44,6 +68,6 @@ SOFTWARE.
 
 ## Documentation
 
-Live Deployed Application: [View Application](ADRIAN ADD LINK TO HERO HERE "Live Deploy")      
+Live Deployed Application: [View Application](ADRIAN ADD LINK TO HEROKU HERE "Live Deploy")      
 
 ![Screenshot](ADD LINK TO SCREENSHOT OF APPLICATION HERE "Proof of Application")      
